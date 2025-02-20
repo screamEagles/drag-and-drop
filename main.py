@@ -39,7 +39,7 @@ while True:
     if landmark_list:
 
         length, _, _ = detector.findDistance(8, 12, img, draw=False)
-        print(length)
+        # print(length)
         if length < 40:
             cursor = landmark_list[8][:2]
             for rectangle in rectangle_list:
